@@ -1,2 +1,2 @@
 # Track-my-Trance
-A personal music management app
+A personal CD-music management app
