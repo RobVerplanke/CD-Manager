@@ -1,0 +1,22 @@
+/* Custom properties */
+
+
+/* Global properties */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+/* Global layout */
+
+#header-holder{
+    background-color: darkblue;
+}
+
+#footer-holder{
+    background-color: darkblue;
+}
+
+
+/* Components */
