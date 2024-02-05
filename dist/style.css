@@ -1,21 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+
 /* Custom properties */
 
+:root{
+    --global-font: 'Nunito', sans-serif;
+    --global-font-color: #333333;
+
+    --background-color: #49c6e5;
+
+}
 
 /* Global properties */
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: var(--global-font);
+    color: var(--global-font-color);
 }
 
 
 /* Global layout */
 
 #header-holder{
-    background-color: darkblue;
+    border-bottom: 15px solid var(--background-color);
 }
 
 #footer-holder{
-    background-color: darkblue;
+    background-color: var(--background-color);
 }
 
 
