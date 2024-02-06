@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
-/* Custom properties */
+/* Reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+/* Custom properties */
 :root{
     --global-font: 'Nunito', sans-serif;
-    --global-font-color: #333333;
-
-    --background-color: #49c6e5;
-
+    --header-font-color: #fffbfa;
+    --main-font-color: #333333;
+    
+    --header-background-color: #54defd;
+    --main-background-color: #fffbfa;
 }
+
 
 /* Global properties */
 
 body {
+    display: flex;
+    flex-direction: column;
+
     font-family: var(--global-font);
     color: var(--global-font-color);
 }
@@ -22,11 +34,18 @@ body {
 /* Global layout */
 
 #header-holder{
-    border-bottom: 15px solid var(--background-color);
+    display: flex;
+    flex: 1;
+
+    color: var(--header-font-color);
+    background-color: var(--header-background-color);
 }
 
-#footer-holder{
-    background-color: var(--background-color);
+#main-holder{
+    flex: 1;
+
+    border: 1px solid black;
+    background-color: var(--main-background-color);
 }
 
 
