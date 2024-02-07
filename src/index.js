@@ -1,12 +1,12 @@
-import albumTest from './modules/album.js';
-import cdTest from './modules/cd.js';
-import trackTest from './modules/track.js';
-
-const logoHolder = document.querySelector('#header-logo-holder');
-const mainHolder = document.querySelector('#main-holder');
+import albumTest from './modules/classes/album.js';
+import cdTest from './modules/classes/cd.js';
+import trackTest from './modules/classes/track.js';
+// import { mainHolder } from './modules/commonElements.js';
+const mainHolder = document.querySelector('#main');
+const logoHolder = document.querySelector('#logo-holder');
 
 logoHolder.innerHTML = '<h2>CDM</h2>';
-mainHolder.innerHTML = '<h2>This is main section</h2><br>';
-mainHolder.innerHTML += `<h3>${albumTest()}</h3><br>`;
-mainHolder.innerHTML += `<h3>${cdTest()}</h3><br>`;
-mainHolder.innerHTML += `<h3>${trackTest()}</h3><br><br>`;
+mainHolder.innerHTML = '<p>This is main section</p><br>';
+mainHolder.innerHTML += `<p>${albumTest()}</p><br>`;
+mainHolder.innerHTML += `<p>${cdTest()}</p><br>`;
+mainHolder.innerHTML += `<p>${trackTest()}</p><br><br>`;

@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 /* Reset  */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -10,43 +10,68 @@
 
 
 /* Custom properties */
-:root{
+:root {
     --global-font: 'Nunito', sans-serif;
-    --header-font-color: #fffbfa;
-    --main-font-color: #333333;
-    
+    --accent-color: #5467fd;
+
+    /* header */
+    --header-height: 80px;
     --header-background-color: #54defd;
+    --header-font-color: #fffbfa;
+    
+    /* main */
     --main-background-color: #fffbfa;
+    --main-font-color: #333333;
 }
 
 
 /* Global properties */
-
 body {
-    display: flex;
-    flex-direction: column;
-
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr;
+    
+    height: 100vh;
     font-family: var(--global-font);
     color: var(--global-font-color);
 }
 
 
 /* Global layout */
-
-#header-holder{
+header {
     display: flex;
-    flex: 1;
 
-    color: var(--header-font-color);
     background-color: var(--header-background-color);
+    font-size: var(--header-font-size);
+    color: var(--header-font-color);
 }
 
-#main-holder{
-    flex: 1;
+#nav-holder {
+    display: flex;
+    align-items: end;
 
-    border: 1px solid black;
+    margin-left: 30px;
+}
+
+main {
+    padding: 50px 0 0 165px;
+
     background-color: var(--main-background-color);
+    color: var(--main-font-color);
+    font-weight: 200;
 }
 
 
 /* Components */
+#logo-holder {
+    display: flex;
+    width: 120px;
+
+    justify-content: center;
+    align-items:center;
+}
+
+.nav-button {
+    margin: 0 15px 0 15px;
+    font-size: 22px;
+    font-weight: 500;
+}
