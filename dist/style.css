@@ -1,7 +1,12 @@
+/* Text fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
-/* Reset  */
+/* Logo fonts */
+@import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
+
+
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +17,8 @@
 /* Custom properties */
 :root {
     --global-font: 'Nunito', sans-serif;
-    --accent-color: #5467fd;
+    --logo-font: 'Syncopate', sans-serif;
+    --accent-color: #FD7354;
 
     /* header */
     --header-height: 80px;
@@ -54,7 +60,6 @@ header {
 
 main {
     padding: 50px 0 0 165px;
-
     background-color: var(--main-background-color);
     color: var(--main-font-color);
     font-weight: 200;
@@ -64,14 +69,16 @@ main {
 /* Components */
 #logo-holder {
     display: flex;
-    width: 120px;
-
     justify-content: center;
+    
+    width: 120px;
+    color: var(--accent-color);
+    font-family: var(--logo-font);
     align-items:center;
 }
 
 .nav-button {
     margin: 0 15px 0 15px;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 500;
 }

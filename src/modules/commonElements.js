@@ -1,3 +1,4 @@
-const mainHolder = document.querySelector('#main');
+const mainSection = document.querySelector('#main');
+const navHolder = document.querySelector('#nav-holder');
 
-export default { mainHolder };
+export { mainSection, navHolder };
