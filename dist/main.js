@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_classes_album_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/classes/album.js */ \"./src/modules/classes/album.js\");\n/* harmony import */ var _modules_classes_cd_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/classes/cd.js */ \"./src/modules/classes/cd.js\");\n/* harmony import */ var _modules_classes_track_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/classes/track.js */ \"./src/modules/classes/track.js\");\n\n\n\n// import mainSection from './modules/commonElements.js';\nconst mainSection = document.querySelector('#main');\n// Set logo\nconst logoHolder = document.querySelector('#logo-holder');\nlogoHolder.innerHTML = '<h2>CDM</h2>';\n\n\n// Load content\nmainSection.innerHTML = '<p>This is main section</p><br>';\nmainSection.innerHTML += `<p>${(0,_modules_classes_album_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()}</p><br>`;\nmainSection.innerHTML += `<p>${(0,_modules_classes_cd_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()}</p><br>`;\nmainSection.innerHTML += `<p>${(0,_modules_classes_track_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()}</p><br><br>`;\n\n\n//# sourceURL=webpack://track-my-trance/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_classes_album_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/classes/album.js */ \"./src/modules/classes/album.js\");\n/* harmony import */ var _modules_classes_cd_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/classes/cd.js */ \"./src/modules/classes/cd.js\");\n/* harmony import */ var _modules_classes_track_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/classes/track.js */ \"./src/modules/classes/track.js\");\n/* harmony import */ var _modules_navbar_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./modules/navbar.js */ \"./src/modules/navbar.js\");\n/* harmony import */ var _modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./modules/commonElements.js */ \"./src/modules/commonElements.js\");\n\n\n\n\n\n\n// Set logo\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.logoHolder.innerHTML = '<h2>CDM</h2>';\n\n// Load navbar buttons\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.navHolder.innerHTML += (0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_3__.newNavButton)('OVERVIEW');\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.navHolder.innerHTML += (0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_3__.newNavButton)('SEARCH');\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.navHolder.innerHTML += (0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_3__.newNavButton)('EDIT');\n\n\n// Load content\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.mainSection.innerHTML = '<p>This is main section</p><br>';\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.mainSection.innerHTML += `<p>${(0,_modules_classes_album_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])()}</p><br>`;\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.mainSection.innerHTML += `<p>${(0,_modules_classes_cd_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])()}</p><br>`;\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_4__.mainSection.innerHTML += `<p>${(0,_modules_classes_track_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"])()}</p><br><br>`;\n\n\n\n//# sourceURL=webpack://CD-Manager/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Album: () => (/* binding */ Album),\n/* harmony export */   \"default\": () => (/* binding */ albumTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction albumTest() {\n  return 'This is album.js';\n}\n\nclass Album {\n  constructor(genre, title, artist, date, label, items, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.date = date;\n    this.label = label;\n    this.items = items;\n  }\n}\n\n\n//# sourceURL=webpack://track-my-trance/./src/modules/classes/album.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Album: () => (/* binding */ Album),\n/* harmony export */   \"default\": () => (/* binding */ albumTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction albumTest() {\n  return 'This is album.js';\n}\n\nclass Album {\n  constructor(genre, title, artist, date, label, items, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.date = date;\n    this.label = label;\n    this.items = items;\n  }\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/classes/album.js?");
 
 /***/ }),
 
@@ -36,7 +36,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CD: () => (/* binding */ CD),\n/* harmony export */   \"default\": () => (/* binding */ cdTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction cdTest() {\n  return 'This is cd.js';\n}\n\nclass CD {\n  constructor(genre, title, artist, date, label, items, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.date = date;\n    this.label = label;\n    this.items = items;\n\n  }\n}\n\n\n//# sourceURL=webpack://track-my-trance/./src/modules/classes/cd.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   CD: () => (/* binding */ CD),\n/* harmony export */   \"default\": () => (/* binding */ cdTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction cdTest() {\n  return 'This is cd.js';\n}\n\nclass CD {\n  constructor(genre, title, artist, date, label, items, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.date = date;\n    this.label = label;\n    this.items = items;\n\n  }\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/classes/cd.js?");
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Entity)\n/* harmony export */ });\nclass Entity {\n  constructor(genre, title, artist, info, rating) {\n    this.genre = genre;\n    this.title = title;\n    this.arist = artist;\n    this.info = info;\n    this.rating = rating;\n  }\n}\n\n\n//# sourceURL=webpack://track-my-trance/./src/modules/classes/entity.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Entity)\n/* harmony export */ });\nclass Entity {\n  constructor(genre, title, artist, info, rating) {\n    this.genre = genre;\n    this.title = title;\n    this.arist = artist;\n    this.info = info;\n    this.rating = rating;\n  }\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/classes/entity.js?");
 
 /***/ }),
 
@@ -56,7 +56,27 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Track: () => (/* binding */ Track),\n/* harmony export */   \"default\": () => (/* binding */ trackTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction trackTest() {\n  return 'This is track.js';\n}\n\nclass Track {\n  constructor(genre, title, artist, length, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.length = length;\n  }\n}\n\n\n//# sourceURL=webpack://track-my-trance/./src/modules/classes/track.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   Track: () => (/* binding */ Track),\n/* harmony export */   \"default\": () => (/* binding */ trackTest)\n/* harmony export */ });\n/* harmony import */ var _entity_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./entity.js */ \"./src/modules/classes/entity.js\");\n\n\nfunction trackTest() {\n  return 'This is track.js';\n}\n\nclass Track {\n  constructor(genre, title, artist, length, info, rating) {\n    this.entity = new _entity_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"](genre, title, artist, info, rating);\n    this.length = length;\n  }\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/classes/track.js?");
+
+/***/ }),
+
+/***/ "./src/modules/commonElements.js":
+/*!***************************************!*\
+  !*** ./src/modules/commonElements.js ***!
+  \***************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   logoHolder: () => (/* binding */ logoHolder),\n/* harmony export */   mainSection: () => (/* binding */ mainSection),\n/* harmony export */   navHolder: () => (/* binding */ navHolder)\n/* harmony export */ });\nconst mainSection = document.querySelector('#main');\nconst navHolder = document.querySelector('#nav-holder');\nconst logoHolder = document.querySelector('#logo-holder');\n\n\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/commonElements.js?");
+
+/***/ }),
+
+/***/ "./src/modules/navbar.js":
+/*!*******************************!*\
+  !*** ./src/modules/navbar.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   buildNavbar: () => (/* binding */ buildNavbar),\n/* harmony export */   newNavButton: () => (/* binding */ newNavButton)\n/* harmony export */ });\nfunction buildNavbar() {\n  return 'TEST';\n}\n\nfunction newNavButton(value) {\n  return `<div class =\"nav-button\"><p>${value}</p></div>`;\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/navbar.js?");
 
 /***/ })
 

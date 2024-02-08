@@ -1,5 +1,5 @@
 {
-  "name": "track-my-trance",
+  "name": "CD-Manager",
   "version": "1.0.0",
   "description": "A personal music management app",
   "private": true,
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/RobVerplanke/Track-my-Trance.git"
+    "url": "git+https://github.com/RobVerplanke/CD-Manager.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/RobVerplanke/Track-my-Trance/issues"
+    "url": "https://github.com/RobVerplanke/CD-Manager/issues"
   },
-  "homepage": "https://github.com/RobVerplanke/Track-my-Trance#readme",
+  "homepage": "https://github.com/RobVerplanke/CD-Manager#readme",
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-airbnb-base": "^15.0.0",

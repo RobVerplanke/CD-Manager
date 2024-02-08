@@ -1,5 +1,7 @@
-export default function buildNavbar() {
-  return `<div class ="nav-button"><p>OVERVIEW</p></div>
-  <div class ="nav-button"><p>SEARCH</p></div>
-  <div class ="nav-button"><p>EDIT</p></div>`;
+export function buildNavbar() {
+  return 'TEST';
+}
+
+export function newNavButton(value) {
+  return `<div class ="nav-button"><p>${value}</p></div>`;
 }
