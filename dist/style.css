@@ -1,6 +1,5 @@
 /* Text fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
 
 /* Logo fonts */
 @import url('https://fonts.googleapis.com/css2?family=Syncopate&display=swap');
@@ -19,11 +18,11 @@
     --global-font: 'Nunito', sans-serif;
     --logo-font: 'Syncopate', sans-serif;
     --accent-color: #FD7354;
-
+    
     /* header */
-    --header-height: 80px;
     --header-background-color: #54defd;
     --header-font-color: #fffbfa;
+    --button-spacing: 30px;
     
     /* main */
     --main-background-color: #fffbfa;
@@ -34,12 +33,17 @@
 /* Global properties */
 body {
     display: grid;
-    grid-template-rows: var(--header-height) 1fr;
+    grid-template-rows: 80px 1fr;
     
     cursor: default;
     height: 100vh;
     font-family: var(--global-font);
     color: var(--global-font-color);
+}
+
+p{
+    font-size: 14px;
+    font-weight: 200;
 }
 
 
@@ -59,11 +63,11 @@ header {
     margin-left: 30px;
 }
 
+
 main {
-    padding: 50px 0 0 165px;
+    padding: 50px 0 0 150px;
     background-color: var(--main-background-color);
     color: var(--main-font-color);
-    font-weight: 200;
 }
 
 
@@ -71,15 +75,13 @@ main {
 #logo-holder {
     display: flex;
     justify-content: center;
+    align-items:center;
     
     width: 120px;
     color: var(--accent-color);
     font-family: var(--logo-font);
-    align-items:center;
 }
 
-.nav-button {
-    margin: 0 15px 0 15px;
-    font-size: 20px;
-    font-weight: 500;
+#nav-holder div:not(:first-child){
+    margin-left: var(--button-spacing);
 }

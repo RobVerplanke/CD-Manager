@@ -1,5 +1,11 @@
-const logoHolder = document.querySelector('#logo-holder');
-const navHolder = document.querySelector('#nav-holder');
-const mainSection = document.querySelector('#main');
+// Buttons
+const buttonOverview = document.querySelector('#button-overview');
+const buttonSearch = document.querySelector('#button-search');
+const buttonEdit = document.querySelector('#button-edit');
 
-export { logoHolder, navHolder, mainSection };
+// Content holder
+const contentHolder = document.querySelector('#main');
+
+export {
+  buttonOverview, buttonSearch, buttonEdit, contentHolder,
+};

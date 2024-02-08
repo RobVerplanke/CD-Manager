@@ -1,5 +1,5 @@
-import { mainSection } from '../commonElements.js';
+import { contentHolder } from '../commonElements.js';
 
 export default function buildEditPage() {
-  mainSection.innerHTML = '<p>This is the edit page</p><br>';
+  contentHolder.innerHTML = '<p>This is the edit page</p><br>';
 }

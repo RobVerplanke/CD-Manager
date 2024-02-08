@@ -1,0 +1,80 @@
+{
+    "albums": [
+      {
+        "title": "Album Title",
+        "artist": "Main Artist",
+        "year": 2022,
+        "collaborators": ["Collaborator 1", "Collaborator 2"],
+        "cds": [
+          {
+            "title": "CD Title",
+            "artist": "Main Artist",
+            "year": 2022,
+            "collaborators": ["Collaborator 3", "Collaborator 4"],
+            "tracks": [
+              {
+                "title": "Track Title 1",
+                "artist": "Main Artist",
+                "year": 2022,
+                "length": "4:30",
+                "collaborators": ["Collaborator 5", "Collaborator 6"]
+              },
+              {
+                "title": "Track Title 2",
+                "artist": "Main Artist",
+                "year": 2022,
+                "length": "3:45",
+                "collaborators": ["Collaborator 7", "Collaborator 8"]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "cds": [
+        {
+          "title": "CD Title 1",
+          "artist": "Main Artist",
+          "year": 2022,
+          "collaborators": ["Collaborator 1", "Collaborator 2"],
+          "tracks": [
+            {
+              "title": "Track Title 1",
+              "artist": "Main Artist",
+              "year": 2022,
+              "length": "4:30",
+              "collaborators": ["Collaborator 3", "Collaborator 4"]
+            },
+            {
+              "title": "Track Title 2",
+              "artist": "Main Artist",
+              "year": 2022,
+              "length": "3:45",
+              "collaborators": ["Collaborator 5", "Collaborator 6"]
+            }
+          ]
+        },
+        {
+          "title": "CD Title 2",
+          "artist": "Main Artist",
+          "year": 2022,
+          "collaborators": ["Collaborator 7", "Collaborator 8"],
+          "tracks": [
+            {
+              "title": "Track Title 3",
+              "artist": "Main Artist",
+              "year": 2022,
+              "length": "5:15",
+              "collaborators": ["Collaborator 9", "Collaborator 10"]
+            },
+            {
+              "title": "Track Title 4",
+              "artist": "Main Artist",
+              "year": 2022,
+              "length": "3:20",
+              "collaborators": ["Collaborator 11", "Collaborator 12"]
+            }
+          ]
+        }
+      ]
+  }

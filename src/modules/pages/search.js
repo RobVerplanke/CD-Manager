@@ -1,5 +1,5 @@
-import { mainSection } from '../commonElements.js';
+import { contentHolder } from '../commonElements.js';
 
 export default function buildSearchPage() {
-  mainSection.innerHTML = '<p>This is the search page</p><br>';
+  contentHolder.innerHTML = '<p>This is the search page</p><br>';
 }
