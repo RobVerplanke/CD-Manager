@@ -1,5 +1,5 @@
-const mainSection = document.querySelector('#main');
-const navHolder = document.querySelector('#nav-holder');
 const logoHolder = document.querySelector('#logo-holder');
+const navHolder = document.querySelector('#nav-holder');
+const mainSection = document.querySelector('#main');
 
-export { mainSection, navHolder, logoHolder };
+export { logoHolder, navHolder, mainSection };

@@ -1,20 +1,13 @@
-import { navHolder, logoHolder } from './commonElements.js';
+import buildOverviewpage from './pages/overview.js';
+import buildSearchpage from './pages/search.js';
+import buildEditpage from './pages/edit.js';
 
-// Set logo
-logoHolder.innerHTML = '<h2>CDM</h2>';
+export default function setNavListeners() {
+  const buttonOverview = document.querySelector('#button-overview');
+  const buttonSearch = document.querySelector('#button-search');
+  const buttonEdit = document.querySelector('#button-edit');
 
-// Buttons in navigation bar
-const buttonTitles = ['OVERVIEW', 'SEARCH', 'EDIT'];
-
-// Create new button
-function newNavButton(value) {
-  return `<div class ="nav-button"><p>${value}</p></div>`;
+  buttonOverview.addEventListener('click', buildOverviewpage);
+  buttonSearch.addEventListener('click', buildSearchpage);
+  buttonEdit.addEventListener('click', buildEditpage);
 }
-
-// Create a button for each item in buttons list
-export default function buildNavbar() {
-  buttonTitles.forEach((title) => {
-    navHolder.innerHTML += newNavButton(title);
-  });
-}
-

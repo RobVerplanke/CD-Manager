@@ -16,7 +16,7 @@
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pages_overview_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pages/overview.js */ \"./src/modules/pages/overview.js\");\n/* harmony import */ var _modules_navbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navbar.js */ \"./src/modules/navbar.js\");\n\n\n\n// Set logo and build nagivation buttons\n(0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n// Load default page\n(0,_modules_pages_overview_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://CD-Manager/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modules_pages_overview_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/pages/overview.js */ \"./src/modules/pages/overview.js\");\n/* harmony import */ var _modules_navbar_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/navbar.js */ \"./src/modules/navbar.js\");\n/* harmony import */ var _modules_commonElements_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/commonElements.js */ \"./src/modules/commonElements.js\");\n\n\n\n\n// Set logo\n_modules_commonElements_js__WEBPACK_IMPORTED_MODULE_2__.logoHolder.innerHTML = '<h2>CDM</h2>';\n\n// Build navigation buttons\n(0,_modules_navbar_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n\n// Load default page\n(0,_modules_pages_overview_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\n\n\n//# sourceURL=webpack://CD-Manager/./src/index.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _mod
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   logoHolder: () => (/* binding */ logoHolder),\n/* harmony export */   mainSection: () => (/* binding */ mainSection),\n/* harmony export */   navHolder: () => (/* binding */ navHolder)\n/* harmony export */ });\nconst mainSection = document.querySelector('#main');\nconst navHolder = document.querySelector('#nav-holder');\nconst logoHolder = document.querySelector('#logo-holder');\n\n\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/commonElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   logoHolder: () => (/* binding */ logoHolder),\n/* harmony export */   mainSection: () => (/* binding */ mainSection),\n/* harmony export */   navHolder: () => (/* binding */ navHolder)\n/* harmony export */ });\nconst logoHolder = document.querySelector('#logo-holder');\nconst navHolder = document.querySelector('#nav-holder');\nconst mainSection = document.querySelector('#main');\n\n\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/commonElements.js?");
 
 /***/ }),
 
@@ -36,7 +36,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ buildNavbar)\n/* harmony export */ });\n/* harmony import */ var _commonElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./commonElements.js */ \"./src/modules/commonElements.js\");\n\n\n// Set logo\n_commonElements_js__WEBPACK_IMPORTED_MODULE_0__.logoHolder.innerHTML = '<h2>CDM</h2>';\n\n// Buttons in navigation bar\nconst buttonTitles = ['OVERVIEW', 'SEARCH', 'EDIT'];\n\n// Create new button\nfunction newNavButton(value) {\n  return `<div class =\"nav-button\"><p>${value}</p></div>`;\n}\n\n// Create a button for each item in buttons list\nfunction buildNavbar() {\n  buttonTitles.forEach((title) => {\n    _commonElements_js__WEBPACK_IMPORTED_MODULE_0__.navHolder.innerHTML += newNavButton(title);\n  });\n}\n\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/navbar.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ setNavListeners)\n/* harmony export */ });\n/* harmony import */ var _pages_overview_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./pages/overview.js */ \"./src/modules/pages/overview.js\");\n/* harmony import */ var _pages_search_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./pages/search.js */ \"./src/modules/pages/search.js\");\n/* harmony import */ var _pages_edit_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pages/edit.js */ \"./src/modules/pages/edit.js\");\n\n\n\n\nfunction setNavListeners() {\n  const buttonOverview = document.querySelector('#button-overview');\n  const buttonSearch = document.querySelector('#button-search');\n  const buttonEdit = document.querySelector('#button-edit');\n\n  buttonOverview.addEventListener('click', _pages_overview_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n  buttonSearch.addEventListener('click', _pages_search_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n  buttonEdit.addEventListener('click', _pages_edit_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/navbar.js?");
+
+/***/ }),
+
+/***/ "./src/modules/pages/edit.js":
+/*!***********************************!*\
+  !*** ./src/modules/pages/edit.js ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ buildEditPage)\n/* harmony export */ });\n/* harmony import */ var _commonElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../commonElements.js */ \"./src/modules/commonElements.js\");\n\n\nfunction buildEditPage() {\n  _commonElements_js__WEBPACK_IMPORTED_MODULE_0__.mainSection.innerHTML = '<p>This is the edit page</p><br>';\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/pages/edit.js?");
 
 /***/ }),
 
@@ -47,6 +57,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ buildOverviewPage)\n/* harmony export */ });\n/* harmony import */ var _commonElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../commonElements.js */ \"./src/modules/commonElements.js\");\n\n\nfunction buildOverviewPage() {\n  _commonElements_js__WEBPACK_IMPORTED_MODULE_0__.mainSection.innerHTML = '<p>This is the overview page</p><br>';\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/pages/overview.js?");
+
+/***/ }),
+
+/***/ "./src/modules/pages/search.js":
+/*!*************************************!*\
+  !*** ./src/modules/pages/search.js ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ buildSearchPage)\n/* harmony export */ });\n/* harmony import */ var _commonElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../commonElements.js */ \"./src/modules/commonElements.js\");\n\n\nfunction buildSearchPage() {\n  _commonElements_js__WEBPACK_IMPORTED_MODULE_0__.mainSection.innerHTML = '<p>This is the search page</p><br>';\n}\n\n\n//# sourceURL=webpack://CD-Manager/./src/modules/pages/search.js?");
 
 /***/ })
 
