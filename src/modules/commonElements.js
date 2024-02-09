@@ -20,8 +20,8 @@ function addForm() {
   return document.createElement('form');
 }
 
-// Create label and 'text' input element
-function addFormInput(title, type, id, required) {
+// Create label and input element in a form-group div
+function addFormInput(labelTitle, type, id, required) {
   const formGroup = document.createElement('div');
   const label = document.createElement('label');
   const element = document.createElement(type);
@@ -29,26 +29,8 @@ function addFormInput(title, type, id, required) {
   // Set attributes
   element.id = id;
   element.required = required;
-  label.innerHTML = `<p>${title} :</p>`;
-  formGroup.classList.add('form-group');
-
-  // Add label and input element to form group
-  formGroup.append(label, element);
-
-  return formGroup;
-}
-
-// Create label and 'select' input element
-function addFormInputSelect(title, id, required) {
-  const formGroup = document.createElement('div');
-  const label = document.createElement('label');
-  const element = document.createElement('select');
-
-  // Set attributes
   label.htmlFor = id;
-  element.id = id;
-  element.required = required;
-  label.innerHTML = `<p>${title} :</p>`;
+  label.innerHTML = `<p>${labelTitle} :</p>`;
   formGroup.classList.add('form-group');
 
   // Add label and input element to form group
@@ -78,5 +60,5 @@ function addSubmitButton() {
 
 export {
   buttonOverview, buttonSearch, buttonEdit, buttonAdd, contentHolder, addTitle, addForm,
-  addFormInput, addSubmitButton, addLegend, addFormInputSelect,
+  addFormInput, addSubmitButton, addLegend,
 };

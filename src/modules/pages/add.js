@@ -1,5 +1,5 @@
 import {
-  contentHolder, addTitle, addForm, addFormInput, addSubmitButton, addLegend, addFormInputSelect,
+  contentHolder, addTitle, addForm, addFormInput, addSubmitButton, addLegend,
 } from '../commonElements.js';
 
 export default function buildAddPage() {
@@ -46,11 +46,7 @@ export default function buildAddPage() {
   ];
 
   formFields.forEach((field) => {
-    if (field.type === 'select') {
-      form.append(addFormInputSelect(field.label, field.id, field.required));
-    } else {
-      form.append(addFormInput(field.label, field.type, field.id, field.required));
-    }
+    form.append(addFormInput(field.label, field.type, field.id, field.required));
   });
 
   // Add legend
