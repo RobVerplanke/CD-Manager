@@ -11,6 +11,7 @@ const contentHolder = document.querySelector('#main');
 function addTitle(title) {
   const titleHolder = document.createElement('div');
   titleHolder.append(title);
+
   return titleHolder;
 }
 
@@ -21,19 +22,38 @@ function addForm() {
   return titleHolder;
 }
 
-// Create label with text input elements
-function addFormInput(title, type, required) {
+// Create label and 'text' input element
+function addFormInput(title, type, id, required) {
   const formGroup = document.createElement('div');
   const label = document.createElement('label');
   const element = document.createElement(type);
 
-  // Set input requirement
+  // Set attributes
+  element.id = id;
   element.required = required;
-
-  // Set elements
-  formGroup.classList.add('form-group');
   label.innerHTML = `<p>${title} :</p>`;
+  formGroup.classList.add('form-group');
 
+  // Add label and input element to form group
+  formGroup.append(label, element);
+
+  return formGroup;
+}
+
+// Create label and 'select' input element
+function addFormInputSelect(title, id, required) {
+  const formGroup = document.createElement('div');
+  const label = document.createElement('label');
+  const element = document.createElement('select');
+
+  // Set attributes
+  label.htmlFor = id;
+  element.id = id;
+  element.required = required;
+  label.innerHTML = `<p>${title} :</p>`;
+  formGroup.classList.add('form-group');
+
+  // Add label and input element to form group
   formGroup.append(label, element);
 
   return formGroup;
@@ -44,8 +64,8 @@ function addLegend(value) {
   const formGroup = document.createElement('div');
   formGroup.classList.add('form-group');
   formGroup.innerHTML = `<h6>${value}</h6>`;
-  return formGroup;
 
+  return formGroup;
 }
 
 // Create form submit button
@@ -60,5 +80,5 @@ function addSubmitButton() {
 
 export {
   buttonOverview, buttonSearch, buttonEdit, buttonAdd, contentHolder, addTitle, addForm,
-  addFormInput, addSubmitButton, addLegend,
+  addFormInput, addSubmitButton, addLegend, addFormInputSelect,
 };
