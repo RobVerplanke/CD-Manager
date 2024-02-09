@@ -5,8 +5,8 @@ export default function albumTest() {
 }
 
 export class Album {
-  constructor(genre, title, artist, date, label, items, info, rating) {
-    this.entity = new Entity(genre, title, artist, info, rating);
+  constructor(genre, title, artist, collaborators, date, label, items, info, rating) {
+    this.entity = new Entity(genre, title, artist, collaborators, info, rating);
     this.date = date;
     this.label = label;
     this.items = items;

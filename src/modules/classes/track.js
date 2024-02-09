@@ -5,8 +5,8 @@ export default function trackTest() {
 }
 
 export class Track {
-  constructor(genre, title, artist, length, info, rating) {
-    this.entity = new Entity(genre, title, artist, info, rating);
+  constructor(genre, title, artist, collaborators, length, info, rating) {
+    this.entity = new Entity(genre, title, artist, collaborators, info, rating);
     this.length = length;
   }
 }
