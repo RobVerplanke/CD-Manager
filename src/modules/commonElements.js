@@ -1,4 +1,4 @@
-// Buttons
+// Navigation buttons
 const buttonOverview = document.querySelector('#button-overview');
 const buttonSearch = document.querySelector('#button-search');
 const buttonEdit = document.querySelector('#button-edit');
@@ -10,16 +10,14 @@ const contentHolder = document.querySelector('#main');
 // Create title element
 function addTitle(title) {
   const titleHolder = document.createElement('div');
-  titleHolder.append(title);
+  titleHolder.innerHTML = `<h2>${title}</h2><br>`;
 
   return titleHolder;
 }
 
 // Create form element
 function addForm() {
-  const titleHolder = document.createElement('form');
-
-  return titleHolder;
+  return document.createElement('form');
 }
 
 // Create label and 'text' input element

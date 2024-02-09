@@ -14,13 +14,16 @@ export default function buildAddPage() {
   // Add labels and input fields
   const formFields = [
     {
-      label: 'Genre*', type: 'select', id: 'genre', required: true,
+      label: 'Type*', type: 'select', id: 'type', required: true,
+    },
+    {
+      label: 'Artist*', type: 'input', id: 'artist', required: true,
     },
     {
       label: 'Title*', type: 'input', id: 'title', required: true,
     },
     {
-      label: 'Artist*', type: 'input', id: 'artist', required: true,
+      label: 'Genre', type: 'input', id: 'genre', required: false,
     },
     {
       label: 'Collaborators', type: 'input', id: 'collabs', required: false,
