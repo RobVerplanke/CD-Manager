@@ -1,5 +1,12 @@
-import { contentHolder } from '../commonElements.js';
+import {
+  contentHolder, clearContent, addTitle,
+} from '../commonElements.js';
 
 export default function buildSearchPage() {
-  contentHolder.innerHTML = '<p>This is the search page</p><br>';
+
+  // Reset content holder
+  clearContent();
+
+  // Set title of content
+  contentHolder.append(addTitle('Search for album, cd or track'));
 }

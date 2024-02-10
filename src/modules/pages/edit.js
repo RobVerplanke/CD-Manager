@@ -1,5 +1,12 @@
-import { contentHolder } from '../commonElements.js';
+import {
+  contentHolder, clearContent, addTitle,
+} from '../commonElements.js';
 
 export default function buildEditPage() {
-  contentHolder.innerHTML = '<p>This is the edit page</p><br>';
+
+  // Reset content holder
+  clearContent();
+
+  // Set title of content
+  contentHolder.append(addTitle('Edit or remove album, cd or track'));
 }

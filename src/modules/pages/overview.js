@@ -1,5 +1,18 @@
-import { contentHolder } from '../commonElements.js';
+import {
+  contentHolder, clearContent, addForm, addTitle,
+} from '../commonElements.js';
 
 export default function buildOverviewPage() {
-  contentHolder.innerHTML = '<p>This is the overview page</p><br>';
+
+  // Reset content holder
+  clearContent();
+
+  // Create form
+  // const form = addForm();
+
+  // Set title of content
+  contentHolder.append(addTitle('Overview'));
+
+  // Put form in content holder
+  // contentHolder.append(form);
 }
