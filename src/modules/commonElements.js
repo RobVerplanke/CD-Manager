@@ -22,13 +22,15 @@ function addTitle(title) {
 // Create form element
 function addForm(method) {
   const newForm = document.createElement('form');
-  newForm.action = '/path';
+  // newForm.action = 'https://httpbin.org/post';
+  newForm.action = '';
+
   newForm.method = method;
   return newForm;
 }
 
 // Create label and input element in a form-group div
-function addFormInput(labelTitle, type, id, required, placeHolder) {
+function addFormInput(labelTitle, type, id, required, placeHolder = '') {
   const formGroup = document.createElement('div');
   const label = document.createElement('label');
   const element = document.createElement(type);
@@ -58,10 +60,10 @@ function addLegend(value) {
 }
 
 // Create form submit button
-function addSubmitButton() {
+function addSubmitButton(value) {
   const button = document.createElement('button');
   button.type = 'submit';
-  button.innerHTML = 'Add';
+  button.innerHTML = value;
 
   return button;
 }

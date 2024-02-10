@@ -1,14 +1,17 @@
 import {
   buttonOverview, buttonSearch, buttonEdit, buttonAdd,
 } from './commonElements.js';
-import buildOverviewpage from './pages/overview.js';
-import buildSearchpage from './pages/search.js';
-import buildEditpage from './pages/edit.js';
-import buildAddpage from './pages/add.js';
+import buildOverviewPage from './pages/overview.js';
+import { buildSearchAlbumPage, buildSearchCDPage, buildSearchTrackPage } from './pages/search.js';
+import { buildEditAlbumPage, buildEditCDPage, buildEditTrackPage } from './pages/edit.js';
+import { buildAddAlbumPage, buildAddCDPage, buildAddTrackPage } from './pages/add.js';
 
 export default function setNavListeners() {
-  buttonOverview.addEventListener('click', buildOverviewpage);
-  buttonSearch.addEventListener('click', buildSearchpage);
-  buttonEdit.addEventListener('click', buildEditpage);
-  buttonAdd.addEventListener('click', buildAddpage);
+  buttonOverview.addEventListener('click', buildOverviewPage);
+  buttonSearch.addEventListener('click', buildSearchTrackPage);
+  buttonEdit.addEventListener('click', buildEditTrackPage);
+  buttonAdd.addEventListener('click', buildAddAlbumPage);
+  // buttonAdd.addEventListener('click', buildAddCDPage);
+  // buttonAdd.addEventListener('click', buildAddTrackPage);
+
 }
