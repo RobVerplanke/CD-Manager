@@ -88,7 +88,7 @@ main {
     margin-left: var(--button-spacing);
 }
 
-input{
+input[type="text"]{
     width: 390px;
     height: 22px;
     border: 1px solid #c5c5c5;
@@ -97,11 +97,31 @@ input{
 }
 
 select{
-    width: 20px;
-    margin-right: 370px;
+    padding:2px;
+    color: var(--main-font-color);
     background-color: var(--primary-color);
     border: 1px solid #c5c5c5;
     border-radius: 5px;
+}
+
+#album{
+    width: 220px;  
+    margin-right: 170px;
+}
+
+#year{
+    width: 55px;  
+    margin-right: 335px;
+}
+
+#items{
+    width: 38px;
+    margin-right: 352px;
+}
+
+#rating{
+    width: 80px;
+    margin-right: 310px;
 }
 
 textarea{

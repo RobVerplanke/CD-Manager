@@ -72,7 +72,7 @@ export function buildAddCDPage() {
   // Add labels and input fields
   const formFields = [
     {
-      label: 'Select album**', type: 'select', id: 'album',
+      label: 'Album', type: 'select', id: 'album',
     },
     {
       label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
@@ -109,7 +109,6 @@ export function buildAddCDPage() {
 
   // Add legend
   form.append(addLegend('* Required'));
-  form.append(addLegend('** If present'));
 
   // Add submit button
   form.append(addSubmitButton('Add'));

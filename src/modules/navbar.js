@@ -10,8 +10,8 @@ export default function setNavListeners() {
   buttonOverview.addEventListener('click', buildOverviewPage);
   buttonSearch.addEventListener('click', buildSearchTrackPage);
   buttonEdit.addEventListener('click', buildEditTrackPage);
-  buttonAdd.addEventListener('click', buildAddAlbumPage);
-  // buttonAdd.addEventListener('click', buildAddCDPage);
+  // buttonAdd.addEventListener('click', buildAddAlbumPage);
+  buttonAdd.addEventListener('click', buildAddCDPage);
   // buttonAdd.addEventListener('click', buildAddTrackPage);
 
 }
