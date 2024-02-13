@@ -152,6 +152,10 @@ textarea{
 }
 
 button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     width: 60px;
     background-color: var(--primary-color);
     color: white;
@@ -160,6 +164,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     margin-top: 15px;
+    text-align: center;
 }
 
 button:hover {

@@ -88,13 +88,13 @@ function addFormInput(elementList) {
       }
         break;
 
-        // Rating: 1-5
+        // Rating: 1-5 stars
       case 'Rating':
 
         // Add extra option, set as default
         defaultOption = document.createElement('option');
 
-        defaultOption.value = 'none';
+        // defaultOption.value = 'none';
         defaultOption.innerText = '(none)';
         inputElement.selectedIndex = 1;
         inputElement.append(defaultOption);
@@ -107,7 +107,7 @@ function addFormInput(elementList) {
         }
         break;
 
-        // Album names
+        // Choose from all album titels
       case 'Album': {
 
         // Add extra option, set as default
