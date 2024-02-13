@@ -51,9 +51,13 @@ function addFormInput(elementList) {
 
     if (field.type === 'input') inputElement.type = 'text';
 
-    // Set values for selectbox options
-    if (field.type === 'select') {
+    if (field.id === 'tracks') {
+      inputElement.type = 'number';
+      inputElement.maxlength = '2';
+    }
 
+    // Set options for select elements
+    if (field.type === 'select') {
       let defaultOption = '';
 
       switch (field.label) {
@@ -91,7 +95,7 @@ function addFormInput(elementList) {
         // Rating: 1-5 stars
       case 'Rating':
 
-        // Add extra option, set as default
+        // Add neutral (node) option, set as default
         defaultOption = document.createElement('option');
 
         // defaultOption.value = 'none';
@@ -110,7 +114,7 @@ function addFormInput(elementList) {
         // Choose from all album titels
       case 'Album': {
 
-        // Add extra option, set as default
+        // Add neutral (node) option, set as default
         defaultOption = document.createElement('option');
         defaultOption.value = 'none';
         defaultOption.innerText = '(none)';
@@ -125,12 +129,12 @@ function addFormInput(elementList) {
         }
         break;
       }
-
       default:
         break;
       }
     }
 
+    // Group label and element, add group to form
     formGroup.append(labelElelemt, inputElement);
     form.append(formGroup);
   });
