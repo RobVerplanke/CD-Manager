@@ -2,19 +2,21 @@ import {
   contentHolder, addTitle, addForm, addFormInput, addSubmitButton, addLegend, clearContent,
 } from '../commonElements.js';
 
-export function buildAddAlbumPage() {
+export default function buildAddPage() {
+  const itemType = 'track';
 
   // Reset content holder
   clearContent();
 
   // Create form
   const form = addForm('post');
+  form.classList.add('form');
 
   // Set title of content
-  form.append(addTitle('Add album'));
+  form.append(addTitle(`Add ${itemType}`));
 
-  // Add labels and input fields
-  const formFields = [
+  // Elements with properties
+  const formFieldsAlbum = [
     {
       label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
     },
@@ -44,33 +46,7 @@ export function buildAddAlbumPage() {
     },
   ];
 
-  formFields.forEach((field) => {
-    form.append(addFormInput(field.label, field.type, field.id, field.required, field.placeHolder));
-  });
-
-  // Add legend
-  form.append(addLegend('* Required'));
-
-  // Add submit button
-  form.append(addSubmitButton('Add'));
-
-  // Put form in content section
-  contentHolder.append(form);
-}
-
-export function buildAddCDPage() {
-
-  // Reset content holder
-  clearContent();
-
-  // Create form
-  const form = addForm('post');
-
-  // Set title of content
-  form.append(addTitle('Add CD'));
-
-  // Add labels and input fields
-  const formFields = [
+  const formFieldsCD = [
     {
       label: 'Album', type: 'select', id: 'album',
     },
@@ -90,7 +66,7 @@ export function buildAddCDPage() {
       label: 'Year', type: 'select', id: 'year', required: false,
     },
     {
-      label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'If present...',
+      label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Label name...',
     },
     {
       label: 'Tracks', type: 'input', id: 'items', required: false, placeHolder: 'Number of tracks...',
@@ -103,33 +79,7 @@ export function buildAddCDPage() {
     },
   ];
 
-  formFields.forEach((field) => {
-    form.append(addFormInput(field.label, field.type, field.id, field.required, field.placeHolder));
-  });
-
-  // Add legend
-  form.append(addLegend('* Required'));
-
-  // Add submit button
-  form.append(addSubmitButton('Add'));
-
-  // Put form in content section
-  contentHolder.append(form);
-}
-
-export function buildAddTrackPage() {
-
-  // Reset content holder
-  clearContent();
-
-  // Create form
-  const form = addForm('post');
-
-  // Set title of content
-  form.append(addTitle('Add Track'));
-
-  // Add labels and input fields
-  const formFields = [
+  const formFieldsTrack = [
     {
       label: 'Select CD*', type: 'select', id: 'album', required: true,
     },
@@ -156,9 +106,9 @@ export function buildAddTrackPage() {
     },
   ];
 
-  formFields.forEach((field) => {
-    form.append(addFormInput(field.label, field.type, field.id, field.required, field.placeHolder));
-  });
+  if (itemType === 'album') form.append(addFormInput(formFieldsAlbum));
+  if (itemType === 'cd') form.append(addFormInput(formFieldsCD));
+  if (itemType === 'track') form.append(addFormInput(formFieldsTrack));
 
   // Add legend
   form.append(addLegend('* Required'));

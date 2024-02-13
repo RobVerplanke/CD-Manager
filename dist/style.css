@@ -98,8 +98,7 @@ input[type="text"]{
 
 select{
     padding:2px;
-    color: var(--main-font-color);
-    background-color: var(--primary-color);
+    color: #525252;
     border: 1px solid #c5c5c5;
     border-radius: 5px;
 }
@@ -137,15 +136,23 @@ textarea{
 }
 
 /* Form */
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
 .form-group{
     display: flex;
-    justify-content:space-between;
+    flex-direction: row;
+    justify-content: space-between;
 
     width: 500px;
-    margin: 10px 0;
+    margin-bottom: 5px;
 }
 
 button {
+    width: 60px;
     background-color: var(--primary-color);
     color: white;
     padding: 10px 15px;
