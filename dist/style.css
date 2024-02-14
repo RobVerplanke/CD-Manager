@@ -23,6 +23,7 @@
     /* header */
     --header-background-color: var(--primary-color);
     --header-font-color: #fffbfa;
+    --dropdown-hover-color: #3da3b9;
     --button-spacing: 30px;
     
     /* main */
@@ -34,7 +35,7 @@
 /* Global properties */
 body {
     display: grid;
-    grid-template-rows: 80px 1fr;
+    grid-template-rows: 50px 1fr;
     
     cursor: default;
     height: 100vh;
@@ -58,12 +59,58 @@ header {
     color: var(--header-font-color);
 }
 
-#nav-holder {
-    display: flex;
-    align-items: end;
+nav {
+    padding: 20px;
+    text-align: center;
+  }
+  nav > ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    background: var(--primary-color);
+  }
+  nav > ul > li {
+    float: left;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: var(--header-font-color);
+    cursor: pointer;
+  }
+  nav > ul > li:hover {
+    background: var(--accent-color);
+  }
+  
+  ul.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    padding: 0;
+  }
+  ul.drop-menu li {
+    background: var(--primary-color);
+    color: var(--header-font-color);
+  }
+  ul.drop-menu li:hover {
+    background: var(--dropdown-hover-color);
+  }
+  ul.drop-menu li:last-child {
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  ul.drop-menu li {
+    display: none;
+  }
+  
+  li:hover > ul.drop-menu li {
+    display: block;
+  }
 
-    margin-left: 30px;
-}
 
 
 main {
@@ -82,10 +129,6 @@ main {
     width: 120px;
     color: var(--accent-color);
     font-family: var(--logo-font);
-}
-
-#nav-holder div:not(:first-child){
-    margin-left: var(--button-spacing);
 }
 
 input[type="text"]{

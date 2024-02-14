@@ -5,7 +5,7 @@ import {
   addAlbumElements, addCDElements, addTrackElements, searchItemElements, editItemElements,
 } from '../form/formElements.js';
 
-export default function buildFormPage(type, method, action) {
+export default function buildFormPage(method, action, type) {
 
   // Create closure
   return () => {

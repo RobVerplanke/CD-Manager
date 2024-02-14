@@ -14,12 +14,28 @@
 
     <header id ="header">
       <div id="logo-holder"><h2>CD-M</h2></div>
-      <div id="nav-holder">
-        <div id ="button-overview" class ="nav-button"><h3>OVERVIEW</h3></div>
+      <nav id="nav-holder">
+        <ul>
+          <li id="button-overview">OVERVIEW</li>
+          <li id="button-search">SEARCH</li>
+          <li id="button-edit">EDIT</li>
+          <li id="button-add">ADD
+            <ul class ="drop-menu menu-#4">
+              <li id="drop-add-album">ALBUM</li>
+              <li id="drop-add-cd">CD</li>
+              <li id="drop-add-track">TRACK</li>
+            </ul>
+          </li>
+        </ul>
+        <!-- <div id ="button-overview" class ="nav-button"><h3>OVERVIEW</h3></div>
         <div id ="button-search" class ="nav-button"><h3>SEARCH</h3></div>
         <div id ="button-edit" class ="nav-button"><h3>EDIT</h3></div>
-        <div id ="button-add" class ="nav-button"><h3>ADD</h3></div>
-      </div>
+        <div id ="button-add" class ="nav-button"><h3>ADD</h3>
+        <div id ="add-album" class ="sub-nav-button"><h4>Album</h4></div>
+        <div id ="add-cd" class ="sub-nav-button"><h4>CD</h4></div>
+        <div id ="add-track" class ="sub-nav-button"><h4>Track</h4></div> -->
+        <!-- </div> -->
+      </nav>
     </header>
     <main id ="main"></main>
   </body>

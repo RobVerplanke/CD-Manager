@@ -2,7 +2,9 @@
 const buttonOverview = document.querySelector('#button-overview');
 const buttonSearch = document.querySelector('#button-search');
 const buttonEdit = document.querySelector('#button-edit');
-const buttonAdd = document.querySelector('#button-add');
+const buttonAddAlbum = document.querySelector('#drop-add-album');
+const buttonAddCD = document.querySelector('#drop-add-cd');
+const buttonAddTrack = document.querySelector('#drop-add-track');
 
 // Content holder
 const contentHolder = document.querySelector('#main');
@@ -36,11 +38,12 @@ function addFormInput(elementList) {
   // Itterate through list of elements
   elementList.forEach((field) => {
     const formGroup = document.createElement('div');
-    formGroup.classList.add('form-group');
     const labelElelemt = document.createElement('label');
     const inputElement = document.createElement(`${field.type}`);
 
     // Set element values and properties
+    formGroup.classList.add('form-group');
+
     labelElelemt.htmlFor = `${field.id}`;
     labelElelemt.innerHTML = `<p>${field.label} :</p>`;
 
@@ -49,8 +52,10 @@ function addFormInput(elementList) {
     inputElement.required = field.required;
     inputElement.placeholder = `${field.placeHolder}`;
 
+    // Use textfield as deafault input element
     if (field.type === 'input') inputElement.type = 'text';
 
+    // Use number element for amounts
     if (field.id === 'tracks') {
       inputElement.type = 'number';
       inputElement.maxlength = '2';
@@ -163,6 +168,7 @@ function addSubmitButton(value) {
 
 
 export {
-  buttonOverview, buttonSearch, buttonEdit, buttonAdd, contentHolder, addTitle, addForm,
-  addFormInput, addSubmitButton, addLegend, clearContent,
+  buttonOverview, buttonSearch, buttonEdit, buttonAddAlbum, buttonAddCD,
+  buttonAddTrack, contentHolder, addTitle, addForm, addFormInput, addSubmitButton,
+  addLegend, clearContent,
 };
