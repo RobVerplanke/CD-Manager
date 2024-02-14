@@ -2,7 +2,7 @@ import {
   contentHolder, addTitle, addForm, addFormInput, addSubmitButton, addLegend, clearContent,
 } from '../commonElements.js';
 import {
-  addAlbumElements, addCDElements, addTrackElements, searchItemElements, editItemElements,
+  addAlbumElements, addCDElements, addTrackElements, searchItemElements,
 } from '../form/formElements.js';
 
 export default function buildFormPage(method, action, type) {
@@ -25,7 +25,6 @@ export default function buildFormPage(method, action, type) {
 
     // Build related elements and add to form
     if (formAction === 'Search') form.append(addFormInput(searchItemElements));
-    if (formAction === 'Edit') form.append(addFormInput(editItemElements));
 
     if (formAction === 'Add' && itemType === 'album') {
       form.append(addFormInput(addAlbumElements));

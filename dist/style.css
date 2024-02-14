@@ -71,15 +71,15 @@ nav {
     background: var(--primary-color);
   }
   nav > ul > li {
+    position: relative;
+    text-transform: uppercase;
+    cursor: pointer;
     float: left;
     width: 100px;
     height: 30px;
     line-height: 30px;
-    position: relative;
-    text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     color: var(--header-font-color);
-    cursor: pointer;
   }
   nav > ul > li:hover {
     background: var(--accent-color);
@@ -93,6 +93,9 @@ nav {
     padding: 0;
   }
   ul.drop-menu li {
+    text-align: left;
+    padding-left: 5px;
+    font-size: 14px;
     background: var(--primary-color);
     color: var(--header-font-color);
   }
@@ -114,7 +117,7 @@ nav {
 
 
 main {
-    padding: 30px 0 0 150px;
+    padding: 20px 0 0 150px;
     background-color: var(--main-background-color);
     color: var(--main-font-color);
 }
@@ -184,6 +187,11 @@ textarea{
 }
 
 /* Form */
+
+.content-title{
+    font-size: 20px;
+    margin:0 0 10px 110px;
+}
 
 .form{
     display: flex;

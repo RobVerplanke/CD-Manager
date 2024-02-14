@@ -3,13 +3,13 @@
 // Search form
 const searchItemElements = [
   {
-    label: 'Artist', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
+    label: 'Artist', type: 'input', id: 'artist', required: false, placeHolder: 'Artist name...',
   },
   {
-    label: 'Title', type: 'input', id: 'title', required: true, placeHolder: 'Album, cd or track title...',
+    label: 'Title', type: 'input', id: 'title', required: false, placeHolder: 'Album, cd or track title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of genre...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
@@ -25,16 +25,6 @@ const searchItemElements = [
   },
 ];
 
-// Edit form
-const editItemElements = [
-  {
-    label: 'Artist', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
-  },
-  {
-    label: 'Title', type: 'input', id: 'title', required: true, placeHolder: 'CD title...',
-  },
-];
-
 // Add album form
 const addAlbumElements = [
   {
@@ -44,7 +34,7 @@ const addAlbumElements = [
     label: 'Title*', type: 'input', id: 'title', required: true, placeHolder: 'Album title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of genre...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
@@ -78,7 +68,7 @@ const addCDElements = [
     label: 'Title*', type: 'input', id: 'title', required: true, placeHolder: 'CD title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of genre...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
@@ -112,7 +102,7 @@ const addTrackElements = [
     label: 'Title*', type: 'input', id: 'title', required: true, placeHolder: 'CD title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of genre...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
@@ -129,5 +119,5 @@ const addTrackElements = [
 ];
 
 export {
-  searchItemElements, editItemElements, addAlbumElements, addCDElements, addTrackElements,
+  searchItemElements, addAlbumElements, addCDElements, addTrackElements,
 };

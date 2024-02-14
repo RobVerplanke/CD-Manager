@@ -1,7 +1,6 @@
 // Navigation buttons
 const buttonOverview = document.querySelector('#button-overview');
 const buttonSearch = document.querySelector('#button-search');
-const buttonEdit = document.querySelector('#button-edit');
 const buttonAddAlbum = document.querySelector('#drop-add-album');
 const buttonAddCD = document.querySelector('#drop-add-cd');
 const buttonAddTrack = document.querySelector('#drop-add-track');
@@ -16,7 +15,9 @@ function clearContent() {
 // Create title element
 function addTitle(title) {
   const titleHolder = document.createElement('div');
-  titleHolder.innerHTML = `<h2>${title}</h2><br>`;
+
+  titleHolder.classList.add('content-title');
+  titleHolder.innerHTML = `${title}<br>`;
 
   return titleHolder;
 }
@@ -24,11 +25,30 @@ function addTitle(title) {
 // Create form element
 function addForm(method) {
   const newForm = document.createElement('form');
+
   // newForm.action = 'https://httpbin.org/post';
   newForm.action = '';
 
   newForm.method = method;
   return newForm;
+}
+
+// Set label element attributes
+function setLabelElement(element, htmlFor, innerText) {
+  const label = element;
+
+  label.htmlFor = htmlFor;
+  label.innerHTML = innerText;
+}
+
+// Set input element attributes
+function setInputElement(element, id, req, placeholder) {
+  const input = element;
+
+  input.id = id;
+  input.name = id;
+  input.required = req;
+  input.placeholder = placeholder;
 }
 
 // Create label and input element in a form-group div
@@ -43,16 +63,10 @@ function addFormInput(elementList) {
 
     // Set element values and properties
     formGroup.classList.add('form-group');
+    setLabelElement(labelElelemt, `${field.id}`, `<p>${field.label} :</p>`);
+    setInputElement(inputElement, field.id, field.required, field.placeHolder);
 
-    labelElelemt.htmlFor = `${field.id}`;
-    labelElelemt.innerHTML = `<p>${field.label} :</p>`;
-
-    inputElement.id = field.id;
-    inputElement.name = field.id;
-    inputElement.required = field.required;
-    inputElement.placeholder = `${field.placeHolder}`;
-
-    // Use textfield as deafault input element
+    // Use textfield as default input element
     if (field.type === 'input') inputElement.type = 'text';
 
     // Use number element for amounts
@@ -70,6 +84,7 @@ function addFormInput(elementList) {
       // 1900-current year
       case 'Year': {
         const currentYear = new Date().getFullYear();
+
         for (let i = currentYear; i > 1899; i--) {
           // console.log(i);
           const option = document.createElement('option');
@@ -84,6 +99,7 @@ function addFormInput(elementList) {
       case 'CDs': {
         for (let i = 0; i < 4; i++) {
           const option = document.createElement('option');
+
           option.value = i + 1;
           option.innerText = i + 1;
           inputElement.append(option);
@@ -91,6 +107,7 @@ function addFormInput(elementList) {
 
         // Add extra option
         const option5 = document.createElement('option');
+
         option5.value = '5-or-more';
         option5.innerText = '5+';
         inputElement.append(option5);
@@ -110,6 +127,7 @@ function addFormInput(elementList) {
 
         for (let i = 0; i < 5; i++) {
           const option = document.createElement('option');
+
           option.value = i + 1;
           option.innerText = '\u2605'.repeat(i + 1);
           inputElement.append(option);
@@ -129,6 +147,7 @@ function addFormInput(elementList) {
         // Add album titles to option list
         for (let i = 0; i < 5; i++) {
           const option = document.createElement('option');
+
           option.innerText = i + 1;
           inputElement.append(option);
         }
@@ -151,6 +170,7 @@ function addFormInput(elementList) {
 
 function addLegend(value) {
   const formGroup = document.createElement('div');
+
   formGroup.classList.add('form-group');
   formGroup.innerHTML = `<h6>${value}</h6>`;
 
@@ -160,6 +180,7 @@ function addLegend(value) {
 // Create form submit button
 function addSubmitButton(value) {
   const button = document.createElement('button');
+
   button.type = 'submit';
   button.innerHTML = value;
 
@@ -168,7 +189,7 @@ function addSubmitButton(value) {
 
 
 export {
-  buttonOverview, buttonSearch, buttonEdit, buttonAddAlbum, buttonAddCD,
+  buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,
   buttonAddTrack, contentHolder, addTitle, addForm, addFormInput, addSubmitButton,
   addLegend, clearContent,
 };
