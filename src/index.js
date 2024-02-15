@@ -1,5 +1,5 @@
 // import buildOverviewPage from './modules/pages/overview.js';
-import setNavListeners from './modules/navbar.js';
+import setNavListeners from './modules/components/navbar.js';
 import buildOverviewPage from './modules/pages/overview.js';
 
 // Set event listeners to buttons

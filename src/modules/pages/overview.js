@@ -2,7 +2,9 @@ import {
   contentHolder, clearContent, addTitle,
 } from '../commonElements.js';
 
-export default function buildOverviewPage() {
+import fetchData from '../utils/api.js';
+
+export default async function buildOverviewPage() {
 
   // Reset content holder
   clearContent();
@@ -10,4 +12,12 @@ export default function buildOverviewPage() {
   // Set title of content
   contentHolder.append(addTitle('Overview'));
 
+  try {
+
+    // Get data
+    const data = await fetchData();
+
+  } catch (error) {
+    console.error('Fout bij opbouwen van overzichtspagina:', error);
+  }
 }

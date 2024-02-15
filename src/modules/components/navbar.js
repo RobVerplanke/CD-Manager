@@ -1,9 +1,9 @@
 import {
   buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,
   buttonAddTrack,
-} from './commonElements.js';
-import buildFormPage from './pages/buildFormPages.js';
-import buildOverviewPage from './pages/overview.js';
+} from '../commonElements.js';
+import buildFormPage from '../pages/buildFormPages.js';
+import buildOverviewPage from '../pages/overview.js';
 
 export default function setNavListeners() {
   buttonOverview.addEventListener('click', buildOverviewPage);
