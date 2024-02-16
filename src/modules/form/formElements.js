@@ -3,22 +3,25 @@
 // Search form
 const searchItemElements = [
   {
-    label: 'Artist', type: 'input', id: 'artist', required: false, placeHolder: 'Artist name...',
+    label: 'Artist', type: 'input', id: 'artist', required: false, placeHolder: 'Artist 1...',
   },
   {
-    label: 'Title', type: 'input', id: 'title', required: false, placeHolder: 'Album, cd or track title...',
+    label: 'Title', type: 'input', id: 'title', required: false, placeHolder: 'Album, cd or track...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Electronic...',
+  },
+  {
+    label: 'Style', type: 'input', id: 'style', required: false, placeHolder: 'Progressive trance...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
   },
   {
-    label: 'Year', type: 'select', id: 'year', required: false,
+    label: 'Release year', type: 'select', id: 'year', required: false,
   },
   {
-    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Label name...',
+    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Name...',
   },
   {
     label: 'Rating', type: 'select', id: 'rating', required: false,
@@ -34,16 +37,19 @@ const addAlbumElements = [
     label: 'Title*', type: 'input', id: 'title', required: true, placeHolder: 'Album title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Electronic...',
+  },
+  {
+    label: 'Style', type: 'input', id: 'style', required: false, placeHolder: 'Progressive trance...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
   },
   {
-    label: 'Year', type: 'select', id: 'year', required: false,
+    label: 'Release year', type: 'select', id: 'year', required: false,
   },
   {
-    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Label name...',
+    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Name...',
   },
   {
     label: 'CDs', type: 'select', id: 'items', required: false,
@@ -62,7 +68,7 @@ const addCDElements = [
     label: 'Album', type: 'select', id: 'album',
   },
   {
-    label: 'Disc nr.', type: 'input', id: 'discs',
+    label: 'Disc nr.', type: 'input', id: 'discs', required: false, placeHolder: '1',
   },
   {
     label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
@@ -71,19 +77,22 @@ const addCDElements = [
     label: 'Title*', type: 'input', id: 'title', required: true, placeHolder: 'CD title...',
   },
   {
-    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Type of music...',
+    label: 'Genre', type: 'input', id: 'genre', required: false, placeHolder: 'Electronic...',
+  },
+  {
+    label: 'Style', type: 'input', id: 'style', required: false, placeHolder: 'Progressive trance...',
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
   },
   {
-    label: 'Year', type: 'select', id: 'year', required: false,
+    label: 'Release year', type: 'select', id: 'year', required: false,
   },
   {
-    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Label name...',
+    label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Name...',
   },
   {
-    label: 'Tracks', type: 'input', id: 'tracks', required: false, placeHolder: 'Number of tracks...',
+    label: 'Tracks', type: 'input', id: 'tracks', required: false, placeHolder: '14',
   },
   {
     label: 'Info', type: 'textarea', id: 'info', required: false, placeHolder: 'More info...',

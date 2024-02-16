@@ -3,8 +3,9 @@ import {
   buttonAddTrack,
 } from '../commonFormElements.js';
 import buildFormPage from '../pages/buildFormPages.js';
-import buildOverviewPage from '../pages/overview.js';
+import buildOverviewPage from '../pages/buildOverviewPage.js';
 
+// Set event listeners
 export default function setNavListeners() {
   buttonOverview.addEventListener('click', buildOverviewPage);
   buttonSearch.addEventListener('click', buildFormPage('get', 'Search', ''));

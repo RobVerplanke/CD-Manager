@@ -15,7 +15,7 @@ export default function buildFormPage(method, action, type) {
     const formAction = action;
 
     // Clear content holder
-    clearContent();
+    clearContent('#main');
 
     // Create form
     const form = addForm(submitMethod);

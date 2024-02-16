@@ -22,7 +22,6 @@ function addForm(method) {
 
   // newForm.action = 'https://httpbin.org/post';
   newForm.action = '';
-
   newForm.method = method;
   return newForm;
 }
@@ -73,14 +72,13 @@ function addFormInput(elementList) {
     if (field.type === 'select') {
       let defaultOption = '';
 
-      switch (field.label) {
+      switch (field.id) {
 
       // 1900-current year
-      case 'Year': {
+      case 'year': {
         const currentYear = new Date().getFullYear();
 
         for (let i = currentYear; i > 1899; i--) {
-          // console.log(i);
           const option = document.createElement('option');
           option.value = i;
           option.innerText = i;
@@ -89,8 +87,8 @@ function addFormInput(elementList) {
       }
         break;
 
-        // CDs: 1-4 or more
-      case 'CDs': {
+      // CDs: 1-4 or more
+      case 'items': {
         for (let i = 0; i < 4; i++) {
           const option = document.createElement('option');
 
@@ -108,8 +106,8 @@ function addFormInput(elementList) {
       }
         break;
 
-        // Rating: 1-5 stars
-      case 'Rating':
+      // Rating: 1-5 stars
+      case 'rating':
 
         // Add neutral (node) option, set as default
         defaultOption = document.createElement('option');
@@ -128,8 +126,8 @@ function addFormInput(elementList) {
         }
         break;
 
-        // Choose from all album titels
-      case 'Album': {
+      // Choose from all album titels
+      case 'album': {
 
         // Add neutral (node) option, set as default
         defaultOption = document.createElement('option');
@@ -161,7 +159,6 @@ function addFormInput(elementList) {
 }
 
 // Create legend
-
 function addLegend(value) {
   const formGroup = document.createElement('div');
 
@@ -180,7 +177,6 @@ function addSubmitButton(value) {
 
   return button;
 }
-
 
 export {
   buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,

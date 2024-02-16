@@ -3,10 +3,11 @@ import {
   clearContent, getTotalAlbums, getTotalCds, getTotalTracks,
 } from '../utils/utils.js';
 
+// Build the overview page
 export default function buildOverviewPage() {
 
-  // Reset content holder
-  clearContent();
+  // Clear content holder
+  clearContent('#main');
 
   // Set title of content
   contentHolder.append(addContentTitle('Overview'));

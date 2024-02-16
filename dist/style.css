@@ -117,6 +117,7 @@ nav {
 
 
 main {
+    display: inline-block;
     padding: 20px 0 0 150px;
     background-color: var(--main-background-color);
     color: var(--main-font-color);
