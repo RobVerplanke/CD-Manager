@@ -62,6 +62,9 @@ const addCDElements = [
     label: 'Album', type: 'select', id: 'album',
   },
   {
+    label: 'Disc nr.', type: 'input', id: 'discs',
+  },
+  {
     label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
   },
   {

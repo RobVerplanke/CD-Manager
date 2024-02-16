@@ -1,23 +1,16 @@
-import {
-  contentHolder, clearContent, addTitle,
-} from '../commonElements.js';
+import { contentHolder, clearContent } from '../commonFormElements.js';
+import { addContentTitle } from '../commonContentElements.js';
+import { getTotalAlbums, getTotalCds, getTotalTracks } from '../utils/utils.js';
 
-import fetchData from '../utils/api.js';
-
-export default async function buildOverviewPage() {
+export default function buildOverviewPage() {
 
   // Reset content holder
   clearContent();
 
   // Set title of content
-  contentHolder.append(addTitle('Overview'));
+  contentHolder.append(addContentTitle('Overview'));
 
-  try {
-
-    // Get data
-    const data = await fetchData();
-
-  } catch (error) {
-    console.error('Fout bij opbouwen van overzichtspagina:', error);
-  }
+  contentHolder.innerHTML += `Total albums: ${getTotalAlbums()}<br>`;
+  contentHolder.innerHTML += `Total cd's: ${getTotalCds()}<br>`;
+  contentHolder.innerHTML += `Total tracks: ${getTotalTracks()}`;
 }

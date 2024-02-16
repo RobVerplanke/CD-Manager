@@ -1,6 +1,6 @@
 import {
-  contentHolder, addTitle, addForm, addFormInput, addSubmitButton, addLegend, clearContent,
-} from '../commonElements.js';
+  contentHolder, addFormTitle, addForm, addFormInput, addSubmitButton, addLegend, clearContent,
+} from '../commonFormElements.js';
 import {
   addAlbumElements, addCDElements, addTrackElements, searchItemElements,
 } from '../form/formElements.js';
@@ -21,7 +21,7 @@ export default function buildFormPage(method, action, type) {
     form.classList.add('form');
 
     // Set and add form title
-    form.append(addTitle(`${formAction} ${itemType}`));
+    form.append(addFormTitle(`${formAction} ${itemType}`));
 
     // Build related elements and add to form
     if (formAction === 'Search') form.append(addFormInput(searchItemElements));

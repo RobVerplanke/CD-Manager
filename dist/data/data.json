@@ -1,80 +1,224 @@
 {
-    "albums": [
-      {
-        "title": "Album Title",
-        "artist": "Main Artist",
-        "year": 2022,
-        "collaborators": ["Collaborator 1", "Collaborator 2"],
-        "cds": [
-          {
-            "title": "CD Title",
-            "artist": "Main Artist",
-            "year": 2022,
-            "collaborators": ["Collaborator 3", "Collaborator 4"],
-            "tracks": [
-              {
-                "title": "Track Title 1",
-                "artist": "Main Artist",
-                "year": 2022,
-                "length": "4:30",
-                "collaborators": ["Collaborator 5", "Collaborator 6"]
-              },
-              {
-                "title": "Track Title 2",
-                "artist": "Main Artist",
-                "year": 2022,
-                "length": "3:45",
-                "collaborators": ["Collaborator 7", "Collaborator 8"]
-              }
-            ]
-          }
-        ]
-      }
-    ],
-    "cds": [
-        {
-          "title": "CD Title 1",
-          "artist": "Main Artist",
-          "year": 2022,
-          "collaborators": ["Collaborator 1", "Collaborator 2"],
-          "tracks": [
-            {
-              "title": "Track Title 1",
-              "artist": "Main Artist",
-              "year": 2022,
-              "length": "4:30",
-              "collaborators": ["Collaborator 3", "Collaborator 4"]
-            },
-            {
-              "title": "Track Title 2",
-              "artist": "Main Artist",
-              "year": 2022,
-              "length": "3:45",
-              "collaborators": ["Collaborator 5", "Collaborator 6"]
-            }
-          ]
-        },
-        {
-          "title": "CD Title 2",
-          "artist": "Main Artist",
-          "year": 2022,
-          "collaborators": ["Collaborator 7", "Collaborator 8"],
-          "tracks": [
-            {
-              "title": "Track Title 3",
-              "artist": "Main Artist",
-              "year": 2022,
-              "length": "5:15",
-              "collaborators": ["Collaborator 9", "Collaborator 10"]
-            },
-            {
-              "title": "Track Title 4",
-              "artist": "Main Artist",
-              "year": 2022,
-              "length": "3:20",
-              "collaborators": ["Collaborator 11", "Collaborator 12"]
-            }
-          ]
-        }
-      ]
-  }
+  "albums": [
+    {
+      "id": "album-1",
+      "title": "Nyana",
+      "artist": "Tiësto",
+      "year": 2003,
+      "collaborators": "",
+      "info": "Track 1.01: Incorrectly listed as \"M. Mayer - Love Is Stronger Than Pride\"\nTrack 1.12: Incorrectly listed as the \"Original Mix\"",
+      "label": "Black Hole Recordings",
+      "country": "Netherlands",
+      "releaseDate": "May 5, 2003",
+      "genre": "Electronic",
+      "style": ["Trance", "Techno", "Progressive Trance"],
+      "cds": ["cd-1", "cd-2"]
+    }
+  ],
+  "cds": [
+    {
+      "id": "cd-1",
+      "title": "OUTDOOR",
+      "artist": "Tiësto",
+      "collaborators": "",
+      "disc": "1/2",
+      "tracks": ["track-1", "track-2", "track-3", "track-4", "track-5", "track-6", "track-7", "track-8", "track-9", "track-10", "track-11", "track-12", "track-13", "track-14"]
+    },
+    {
+      "id": "cd-2",
+      "title": "INDOOR",
+      "artist": "Tiësto",
+      "collaborators": "",
+      "disc": "2/2",
+      "tracks": ["track-15", "track-16", "track-17", "track-18", "track-19", "track-20", "track-21", "track-22", "track-23", "track-24", "track-25", "track-26", "track-27"]
+    }
+  ],
+  "tracks": [
+    {
+      "id": "track-1",
+      "title": "Supertiel",
+      "artist": "Reinhard Voigt",
+      "collaborators": "",
+      "length": "7:05"
+    },
+    {
+      "id": "track-2",
+      "title": "Chutney (Size 9 Reinterpretation)",
+      "artist": "Tom Mangan",
+      "collaborators": "",
+      "length": "4:48"
+    },
+    {
+      "id": "track-3",
+      "title": "Acapulco",
+      "artist": "The Ambush",
+      "collaborators": "",
+      "length": "3:38"
+    },
+    {
+      "id": "track-4",
+      "title": "Obsession (Frank Biazzi Remix)",
+      "artist": "Tiësto Vs. Junkie XL",
+      "collaborators": "",
+      "length": "3:52"
+    },
+    {
+      "id": "track-5",
+      "title": "Totem",
+      "artist": "Planisphere",
+      "collaborators": "",
+      "length": "8:00"
+    },
+    {
+      "id": "track-6",
+      "title": "Let The Light Shine In",
+      "artist": "Darren Tate Vs. Jono Grant",
+      "collaborators": "",
+      "length": "6:16"
+    },
+    {
+      "id": "track-7",
+      "title": "Inca",
+      "artist": "Midway",
+      "collaborators": "",
+      "length": "3:55"
+    },
+    {
+      "id": "track-8",
+      "title": "Nyana",
+      "artist": "Tiësto",
+      "collaborators": "",
+      "length": "7:34"
+    },
+    {
+      "id": "track-9",
+      "title": "Venus (Meant To Be Your Lover) (Tiësto Remix)",
+      "artist": "DJ Cor Fijneman* Featuring Jan Johnston",
+      "collaborators": "",
+      "length": "4:49"
+    },
+    {
+      "id": "track-10",
+      "title": "Tears From The Moon (Tiësto In Search Of Sunrise Remix)",
+      "artist": "Conjure One Feat. Sinéad O'Connor",
+      "collaborators": "",
+      "length": "6:31"
+    },
+    {
+      "id": "track-11",
+      "title": "Electronic Malfunction",
+      "artist": "DJ Ton T.B.",
+      "collaborators": "",
+      "length": "5:40"
+    },
+    {
+      "id": "track-12",
+      "title": "Love Angel (M.I.K.E. Remix)",
+      "artist": "The Gift (2)",
+      "collaborators": "",
+      "length": "5:22"
+    },
+    {
+      "id": "track-13",
+      "title": "Urban Shakedown (Original Mix)",
+      "artist": "Solar Factor",
+      "collaborators": "",
+      "length": "3:31"
+    },
+    {
+      "id": "track-14",
+      "title": "Mistral",
+      "artist": "GTR",
+      "collaborators": "",
+      "length": "6:11"
+    },
+    {
+      "id": "track-15",
+      "title": "Destiny Sunrise",
+      "artist": "Catcher",
+      "collaborators": "",
+      "length": "5:50"
+    },
+    {
+      "id": "track-16",
+      "title": "In Your Eyes (Blue Mix)",
+      "artist": "Filterheadz Present Orange 3",
+      "collaborators": "",
+      "length": "3:56"
+    },
+    {
+      "id": "track-17",
+      "title": "Beautiful Things (Gabriel & Dresden Remix)",
+      "artist": "Andain",
+      "collaborators": "",
+      "length": "7:15"
+    },
+    {
+      "id": "track-18",
+      "title": "Destination",
+      "artist": "Solarstone Vs. Sirocco",
+      "collaborators": "",
+      "length": "5:13"
+    },
+    {
+      "id": "track-19",
+      "title": "U Write The Rules (Solarstone Remix)",
+      "artist": "Young Parisians",
+      "collaborators": "",
+      "length": "5:13"
+    },
+    {
+      "id": "track-20",
+      "title": "Nothing (93 Returning Mix)",
+      "artist": "Holden* & Thompson*",
+      "collaborators": "",
+      "length": "5:40"
+    },
+    {
+      "id": "track-21",
+      "title": "Forever Waiting",
+      "artist": "Mr. Sam Vs. Fred Baker Present As One (2)",
+      "collaborators": "",
+      "length": "5:39"
+    },
+    {
+      "id": "track-22",
+      "title": "As The Rush Comes (Exclusive Demo Mix)",
+      "artist": "Motorcycle",
+      "collaborators": "",
+      "length": "6:43"
+    },
+    {"id": "track-23",
+      "title": "Never (DJ Tiësto Remix Vs. Filterheadz Remix)",
+      "artist": "The Roc Project Feat. Tina Arena",
+      "collaborators": "",
+      "length": "9:29"
+    },
+    {"id": "track-24",
+      "title": "Morgentau (Spring Mix)",
+      "artist": "Smart System",
+      "collaborators": "",
+      "length": "4:42"
+    },
+    {"id": "track-25",
+      "title": "Requiem For A Dream (Leama's Dream Mix)",
+      "artist": "Leama",
+      "collaborators": "",
+      "length": "7:18"
+    },
+    {
+      "id": "track-26",
+      "title": "Remember (Summer Sun)",
+      "artist": "P.O.S.",
+      "collaborators": "",
+      "length": "5:32"
+    },
+    {
+      "id": "track-27",
+      "title": "North Pole",
+      "artist": "Solid Globe",
+      "collaborators": "",
+      "length": "N/A"
+    }
+  ]
+}

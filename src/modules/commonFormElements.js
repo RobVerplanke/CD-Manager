@@ -13,7 +13,7 @@ function clearContent() {
 }
 
 // Create title element
-function addTitle(title) {
+function addFormTitle(title) {
   const titleHolder = document.createElement('div');
 
   titleHolder.classList.add('content-title');
@@ -70,7 +70,7 @@ function addFormInput(elementList) {
     if (field.type === 'input') inputElement.type = 'text';
 
     // Use number element for amounts
-    if (field.id === 'tracks') {
+    if (field.id === 'tracks' || field.id === 'discs') {
       inputElement.type = 'number';
       inputElement.maxlength = '2';
     }
@@ -190,6 +190,6 @@ function addSubmitButton(value) {
 
 export {
   buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,
-  buttonAddTrack, contentHolder, addTitle, addForm, addFormInput, addSubmitButton,
+  buttonAddTrack, contentHolder, addFormTitle, addForm, addFormInput, addSubmitButton,
   addLegend, clearContent,
 };

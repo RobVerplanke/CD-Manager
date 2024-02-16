@@ -1,7 +1,7 @@
 import {
   buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,
   buttonAddTrack,
-} from '../commonElements.js';
+} from '../commonFormElements.js';
 import buildFormPage from '../pages/buildFormPages.js';
 import buildOverviewPage from '../pages/overview.js';
 
