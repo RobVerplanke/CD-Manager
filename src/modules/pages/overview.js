@@ -1,6 +1,7 @@
-import { contentHolder, clearContent } from '../commonFormElements.js';
-import { addContentTitle } from '../commonContentElements.js';
-import { getTotalAlbums, getTotalCds, getTotalTracks } from '../utils/utils.js';
+import { contentHolder, addContentTitle } from '../commonContentElements.js';
+import {
+  clearContent, getTotalAlbums, getTotalCds, getTotalTracks,
+} from '../utils/utils.js';
 
 export default function buildOverviewPage() {
 

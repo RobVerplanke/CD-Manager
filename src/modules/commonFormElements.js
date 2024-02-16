@@ -4,13 +4,7 @@ const buttonSearch = document.querySelector('#button-search');
 const buttonAddAlbum = document.querySelector('#drop-add-album');
 const buttonAddCD = document.querySelector('#drop-add-cd');
 const buttonAddTrack = document.querySelector('#drop-add-track');
-
-// Content holder
-const contentHolder = document.querySelector('#main');
-
-function clearContent() {
-  contentHolder.innerHTML = '';
-}
+const formHolder = document.querySelector('#main');
 
 // Create title element
 function addFormTitle(title) {
@@ -190,6 +184,6 @@ function addSubmitButton(value) {
 
 export {
   buttonOverview, buttonSearch, buttonAddAlbum, buttonAddCD,
-  buttonAddTrack, contentHolder, addFormTitle, addForm, addFormInput, addSubmitButton,
-  addLegend, clearContent,
+  buttonAddTrack, formHolder, addFormTitle, addForm, addFormInput, addSubmitButton,
+  addLegend,
 };

@@ -1,4 +1,5 @@
-import { contentHolder } from './commonFormElements.js';
+// Content holder
+const contentHolder = document.querySelector('#main');
 
 // Create title element
 function addContentTitle(title) {
@@ -10,8 +11,9 @@ function addContentTitle(title) {
   return titleHolder;
 }
 
+// Create content section
 function addContent(title, data) {
   contentHolder.innerHTML = `<h3>${title} :</h3>${data}`;
 }
 
-export { addContentTitle, addContent };
+export { contentHolder, addContentTitle, addContent };

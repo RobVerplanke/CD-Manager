@@ -11,3 +11,8 @@ export function getTotalCds() {
 export function getTotalTracks() {
   return data.data.tracks.length;
 }
+
+export function clearContent() {
+  const formHolder = document.querySelector('#main');
+  formHolder.innerHTML = '';
+}

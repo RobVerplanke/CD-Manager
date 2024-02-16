@@ -1,9 +1,10 @@
 import {
-  contentHolder, addFormTitle, addForm, addFormInput, addSubmitButton, addLegend, clearContent,
+  formHolder, addFormTitle, addForm, addFormInput, addSubmitButton, addLegend,
 } from '../commonFormElements.js';
 import {
   addAlbumElements, addCDElements, addTrackElements, searchItemElements,
 } from '../form/formElements.js';
+import { clearContent } from '../utils/utils.js';
 
 export default function buildFormPage(method, action, type) {
 
@@ -43,6 +44,6 @@ export default function buildFormPage(method, action, type) {
     form.append(addSubmitButton(formAction));
 
     // Put form in content section
-    contentHolder.append(form);
+    formHolder.append(form);
   };
 }

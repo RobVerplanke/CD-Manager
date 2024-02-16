@@ -12,25 +12,36 @@
       "releaseDate": "May 5, 2003",
       "genre": "Electronic",
       "style": ["Trance", "Techno", "Progressive Trance"],
-      "cds": ["cd-1", "cd-2"]
+      "cds": ["cd-1", "cd-2"],
+      "added": "16-02-24",
+      "img": "https://i.discogs.com/fzY1IxFHTL18aAFlXr-ql3Flmv_wdzIU_lShZ2NUa_k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDgx/NC0xMjM5ODk3NTY0/LmpwZWc.jpeg",
+      "views": 0
     }
   ],
   "cds": [
     {
       "id": "cd-1",
+      "album": "album-1",
       "title": "OUTDOOR",
       "artist": "Tiësto",
       "collaborators": "",
       "disc": "1/2",
-      "tracks": ["track-1", "track-2", "track-3", "track-4", "track-5", "track-6", "track-7", "track-8", "track-9", "track-10", "track-11", "track-12", "track-13", "track-14"]
+      "tracks": ["track-1", "track-2", "track-3", "track-4", "track-5", "track-6", "track-7", "track-8", "track-9", "track-10", "track-11", "track-12", "track-13", "track-14"],
+      "added": "16-02-24",
+      "img": "https://i.discogs.com/fzY1IxFHTL18aAFlXr-ql3Flmv_wdzIU_lShZ2NUa_k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDgx/NC0xMjM5ODk3NTY0/LmpwZWc.jpeg",
+      "views": 0
     },
     {
       "id": "cd-2",
+      "album": "album-1",
       "title": "INDOOR",
       "artist": "Tiësto",
       "collaborators": "",
       "disc": "2/2",
-      "tracks": ["track-15", "track-16", "track-17", "track-18", "track-19", "track-20", "track-21", "track-22", "track-23", "track-24", "track-25", "track-26", "track-27"]
+      "tracks": ["track-15", "track-16", "track-17", "track-18", "track-19", "track-20", "track-21", "track-22", "track-23", "track-24", "track-25", "track-26", "track-27"],
+      "added": "16-02-24",
+      "img": "https://i.discogs.com/fzY1IxFHTL18aAFlXr-ql3Flmv_wdzIU_lShZ2NUa_k/rs:fit/g:sm/q:40/h:300/w:300/czM6Ly9kaXNjb2dz/LWRhdGFiYXNlLWlt/YWdlcy9SLTE1NDgx/NC0xMjM5ODk3NTY0/LmpwZWc.jpeg",
+      "views": 0
     }
   ],
   "tracks": [
@@ -39,186 +50,267 @@
       "title": "Supertiel",
       "artist": "Reinhard Voigt",
       "collaborators": "",
-      "length": "7:05"
+      "remix": "",
+      "length": "7:05",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-2",
       "title": "Chutney (Size 9 Reinterpretation)",
       "artist": "Tom Mangan",
       "collaborators": "",
-      "length": "4:48"
+      "remix": ["Size 9"],
+      "length": "4:48",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-3",
       "title": "Acapulco",
       "artist": "The Ambush",
-      "collaborators": "",
-      "length": "3:38"
+      "collaborators": ["Oliver Lieb"],
+      "remix": "",
+      "length": "3:38",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-4",
       "title": "Obsession (Frank Biazzi Remix)",
       "artist": "Tiësto Vs. Junkie XL",
-      "collaborators": "",
-      "length": "3:52"
+      "collaborators": ["Tom Holkenborg"],
+      "remix": ["Frank Biazzi"],
+      "length": "3:52",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-5",
       "title": "Totem",
       "artist": "Planisphere",
-      "collaborators": "",
-      "length": "8:00"
+      "collaborators": ["Georges Petkidis", "L-Vee"],
+      "remix": "",
+      "length": "8:00",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-6",
       "title": "Let The Light Shine In",
       "artist": "Darren Tate Vs. Jono Grant",
       "collaborators": "",
-      "length": "6:16"
+      "remix": "",
+      "length": "6:16",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-7",
       "title": "Inca",
       "artist": "Midway",
-      "collaborators": "",
-      "length": "3:55"
+      "collaborators": ["Ralph Barendse"],
+      "remix": "",
+      "length": "3:55",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-8",
       "title": "Nyana",
       "artist": "Tiësto",
       "collaborators": "",
-      "length": "7:34"
+      "remix": "",
+      "length": "7:34",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-9",
       "title": "Venus (Meant To Be Your Lover) (Tiësto Remix)",
-      "artist": "DJ Cor Fijneman* Featuring Jan Johnston",
-      "collaborators": "",
-      "length": "4:49"
+      "artist": "DJ Cor Fijneman Featuring Jan Johnston",
+      "collaborators": ["Roberto Scilatti (Tiësto)"],
+      "remix": ["Tiësto"],
+      "length": "4:49",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-10",
       "title": "Tears From The Moon (Tiësto In Search Of Sunrise Remix)",
       "artist": "Conjure One Feat. Sinéad O'Connor",
-      "collaborators": "",
-      "length": "6:31"
+      "collaborators": ["Billy Steinberg", "Kyoko Baertsoen", "Rick Nowels", "Sinéad O'Connor"],
+      "remix": ["Tiësto"],
+      "length": "6:31",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-11",
       "title": "Electronic Malfunction",
       "artist": "DJ Ton T.B.",
-      "collaborators": "",
-      "length": "5:40"
+      "collaborators": ["Erik De Koning"],
+      "remix": "",
+      "length": "5:40",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-12",
       "title": "Love Angel (M.I.K.E. Remix)",
       "artist": "The Gift (2)",
-      "collaborators": "",
-      "length": "5:22"
+      "collaborators": ["M.I.K.E.", "Mark Dedross"],
+      "remix": ["M.I.K.E."],
+      "length": "5:22",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-13",
       "title": "Urban Shakedown (Original Mix)",
       "artist": "Solar Factor",
-      "collaborators": "",
-      "length": "3:31"
+      "collaborators": ["M.I.K.E."],
+      "remix": "",
+      "length": "3:31",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-14",
       "title": "Mistral",
       "artist": "GTR",
       "collaborators": "",
-      "length": "6:11"
+      "remix": "",
+      "length": "6:11",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-15",
       "title": "Destiny Sunrise",
       "artist": "Catcher",
-      "collaborators": "",
-      "length": "5:50"
+      "collaborators": ["Brendan Webster", "Dave Webster"],
+      "remix": "",
+      "length": "5:50",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-16",
       "title": "In Your Eyes (Blue Mix)",
       "artist": "Filterheadz Present Orange 3",
-      "collaborators": "",
-      "length": "3:56"
+      "collaborators": ["Bert Wilmaers", "Maarten Wilmaers"],
+      "remix": ["Blue"],
+      "length": "3:56",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-17",
       "title": "Beautiful Things (Gabriel & Dresden Remix)",
       "artist": "Andain",
-      "collaborators": "",
-      "length": "7:15"
+      "collaborators": ["David Penner", "Josh Gabriel", "Mavie Marcos"],
+      "remix": ["Gabriel & Dresden"],
+      "length": "7:15",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-18",
       "title": "Destination",
       "artist": "Solarstone Vs. Sirocco",
-      "collaborators": "",
-      "length": "5:13"
+      "collaborators": ["A. Bury", "Michelle Maddock", "R. Mowatt"],
+      "remix": "",
+      "length": "5:13",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-19",
       "title": "U Write The Rules (Solarstone Remix)",
       "artist": "Young Parisians",
-      "collaborators": "",
-      "length": "5:13"
+      "collaborators": ["A. Bury", "R. Mowatt"],
+      "remix": ["Solarstone"],
+      "length": "5:13",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-20",
       "title": "Nothing (93 Returning Mix)",
-      "artist": "Holden* & Thompson*",
-      "collaborators": "",
-      "length": "5:40"
+      "artist": "Holden & Thompson",
+      "collaborators": ["James Holden", "Julie Thompson"],
+      "remix": ["93 Returning"],
+      "length": "5:40",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-21",
       "title": "Forever Waiting",
       "artist": "Mr. Sam Vs. Fred Baker Present As One (2)",
-      "collaborators": "",
-      "length": "5:39"
+      "collaborators": ["Frederic De Backer", "DJ Mr. Sam"],
+      "remix": "",
+      "length": "5:39",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-22",
       "title": "As The Rush Comes (Exclusive Demo Mix)",
       "artist": "Motorcycle",
-      "collaborators": "",
-      "length": "6:43"
+      "collaborators": ["D. Dresden", "J. Brieden", "J. Gabriel"],
+      "remix": "",
+      "length": "6:43",
+      "added": "16-02-24",
+      "views": 0
     },
     {"id": "track-23",
       "title": "Never (DJ Tiësto Remix Vs. Filterheadz Remix)",
       "artist": "The Roc Project Feat. Tina Arena",
-      "collaborators": "",
-      "length": "9:29"
+      "collaborators": ["A. Lorenzo", "R. Checo", "Tina Arena"],
+      "remix": ["DJ Tiësto, Filterheadz"],
+      "length": "9:29",
+      "added": "16-02-24",
+      "views": 0
     },
     {"id": "track-24",
       "title": "Morgentau (Spring Mix)",
       "artist": "Smart System",
-      "collaborators": "",
-      "length": "4:42"
+      "collaborators": ["Chopstick", "Martin Broszeit"],
+      "remix": "",
+      "length": "4:42",
+      "added": "16-02-24",
+      "views": 0
     },
     {"id": "track-25",
       "title": "Requiem For A Dream (Leama's Dream Mix)",
       "artist": "Leama",
-      "collaborators": "",
-      "length": "7:18"
+      "collaborators": ["Andy Moor"],
+      "remix": ["Leama"],
+      "length": "7:18",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-26",
       "title": "Remember (Summer Sun)",
       "artist": "P.O.S.",
-      "collaborators": "",
-      "length": "5:32"
+      "collaborators": ["P. Siljamäki"],
+      "remix": "",
+      "length": "5:32",
+      "added": "16-02-24",
+      "views": 0
     },
     {
       "id": "track-27",
       "title": "North Pole",
       "artist": "Solid Globe",
-      "collaborators": "",
-      "length": "N/A"
+      "collaborators": ["Maurice Night", "Yves La Verne"],
+      "remix": "",
+      "length": "6:24",
+      "added": "16-02-24",
+      "views": 0
     }
   ]
 }
