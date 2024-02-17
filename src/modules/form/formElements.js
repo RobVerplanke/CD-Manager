@@ -52,13 +52,16 @@ const addAlbumElements = [
     label: 'Label', type: 'input', id: 'label', required: false, placeHolder: 'Name...',
   },
   {
-    label: 'CDs', type: 'select', id: 'items', required: false,
+    label: 'CDs', type: 'select', id: 'cds', required: false,
   },
   {
     label: 'Info', type: 'textarea', id: 'info', required: false, placeHolder: 'More info...',
   },
   {
     label: 'Rating', type: 'select', id: 'rating', required: false,
+  },
+  {
+    label: 'Image', type: 'input', id: 'img', required: false, placeHolder: 'Select image',
   },
 ];
 
@@ -68,7 +71,7 @@ const addCDElements = [
     label: 'Album', type: 'select', id: 'album',
   },
   {
-    label: 'Disc nr.', type: 'input', id: 'discs', required: false, placeHolder: '1',
+    label: 'Disc nr.', type: 'input', id: 'disc', required: false, placeHolder: '1',
   },
   {
     label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
@@ -100,12 +103,15 @@ const addCDElements = [
   {
     label: 'Rating', type: 'select', id: 'rating', required: false,
   },
+  {
+    label: 'Image', type: 'input', id: 'img', required: false, placeHolder: 'Select image',
+  },
 ];
 
 // Add track form
 const addTrackElements = [
   {
-    label: 'Select CD*', type: 'select', id: 'album', required: true,
+    label: 'Select CD*', type: 'select', id: 'cds', required: true,
   },
   {
     label: 'Artist*', type: 'input', id: 'artist', required: true, placeHolder: 'Artist name...',
@@ -118,6 +124,9 @@ const addTrackElements = [
   },
   {
     label: 'Collaborators', type: 'input', id: 'collabs', required: false, placeHolder: 'Artist 1, artist 2...',
+  },
+  {
+    label: 'Remix', type: 'input', id: 'remix', required: false, placeHolder: 'Artist...',
   },
   {
     label: 'Length', type: 'input', id: 'length', required: false, placeHolder: 'Length of track...',

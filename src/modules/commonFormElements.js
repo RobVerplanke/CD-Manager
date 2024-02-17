@@ -21,8 +21,8 @@ function addForm(method) {
   const newForm = document.createElement('form');
 
   // newForm.action = 'https://httpbin.org/post';
+  // newForm.method = method;
   newForm.action = '';
-  newForm.method = method;
   return newForm;
 }
 
@@ -63,7 +63,7 @@ function addFormInput(elementList) {
     if (field.type === 'input') inputElement.type = 'text';
 
     // Use number element for amounts
-    if (field.id === 'tracks' || field.id === 'discs') {
+    if (field.id === 'tracks' || field.id === 'disc') {
       inputElement.type = 'number';
       inputElement.maxlength = '2';
     }
@@ -88,7 +88,7 @@ function addFormInput(elementList) {
         break;
 
       // CDs: 1-4 or more
-      case 'items': {
+      case 'cds': {
         for (let i = 0; i < 4; i++) {
           const option = document.createElement('option');
 
@@ -172,7 +172,7 @@ function addLegend(value) {
 function addSubmitButton(value) {
   const button = document.createElement('button');
 
-  button.type = 'submit';
+  button.type = 'button';
   button.innerHTML = value;
 
   return button;

@@ -4,6 +4,7 @@ import {
 import {
   addAlbumElements, addCDElements, addTrackElements, searchItemElements,
 } from '../form/formElements.js';
+import { setAddSubmitListener } from '../form/addFormHandler.js';
 import { clearContent } from '../utils/utils.js';
 
 export default function buildFormPage(method, action, type) {
@@ -40,8 +41,11 @@ export default function buildFormPage(method, action, type) {
       form.append(addLegend('* Required'));
     }
 
-    // Add submit button to form
-    form.append(addSubmitButton(formAction));
+    // Create submit button, set even tlistener and add it to form
+    const submitBtn = addSubmitButton(formAction);
+    setAddSubmitListener(submitBtn);
+    submitBtn.classList.add('submit-button');
+    form.append(submitBtn);
 
     // Put form in content section
     formHolder.append(form);
