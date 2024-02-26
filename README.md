@@ -1,3 +1,5 @@
+### (Under construction)
+
 # CD-Manager
 
 This is a personal project primarily aimed at learning JavaScript programming. The main focus is to gain hands-on experience with importing and utilizing data within a web application. As the project evolves, additional features and functionalities will be implemented, reflecting the growing knowledge and skills acquired during the learning process.

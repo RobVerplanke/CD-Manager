@@ -1,19 +1,20 @@
-import data from './api.js';
+import { data } from './api.js';
 
 // Get total amount of albums in database
 export function getTotalAlbums() {
-  return data.data.albums.length;
+  return data.albums.length;
 }
 
 // Get total amount of CDs in database
 export function getTotalCds() {
-  return data.data.cds.length;
+  return data.cds.length;
 }
 
 // Get total amount of tracks in database
 export function getTotalTracks() {
-  return data.data.tracks.length;
+  return data.tracks.length;
 }
+
 
 // Clear section
 export function clearContent(section) {

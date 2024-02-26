@@ -4,7 +4,7 @@ import {
 import {
   addAlbumElements, addCDElements, addTrackElements, searchItemElements,
 } from '../form/formElements.js';
-import { setAddSubmitListener } from '../form/addFormHandler.js';
+// import { setAddSubmitListener } from '../form/addFormHandler.js';
 import { clearContent } from '../utils/utils.js';
 
 export default function buildFormPage(method, action, type) {
@@ -43,7 +43,7 @@ export default function buildFormPage(method, action, type) {
 
     // Create submit button, set even tlistener and add it to form
     const submitBtn = addSubmitButton(formAction);
-    setAddSubmitListener(submitBtn);
+    // setAddSubmitListener(submitBtn);
     submitBtn.classList.add('submit-button');
     form.append(submitBtn);
 

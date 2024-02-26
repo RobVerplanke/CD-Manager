@@ -21,7 +21,10 @@ function addForm(method) {
   const newForm = document.createElement('form');
 
   // newForm.action = 'https://httpbin.org/post';
+
+  // Uncomment when sending data:
   // newForm.method = method;
+
   newForm.action = '';
   return newForm;
 }
@@ -172,7 +175,8 @@ function addLegend(value) {
 function addSubmitButton(value) {
   const button = document.createElement('button');
 
-  button.type = 'button';
+  // Change type to 'submit' when sending data
+  button.type = 'button'; // With 'button': use event handler for getting data
   button.innerHTML = value;
 
   return button;
